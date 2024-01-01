@@ -1,6 +1,11 @@
+img {
+  width: auto;
+  width: 100%;
+  display: block;
+}
+
 body {
   margin: 0;
-  font-family: "Arial", sans-serif;
   background-image: url(svg/grid.svg);
 }
 
