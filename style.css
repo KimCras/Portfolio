@@ -115,6 +115,34 @@ header {
   margin: 0;
 }
 
+/*PORTFOLIO*/
+.image_off,
+#junji:hover .image_on,
+#smiley:hover .image_on,
+#frog:hover .image_on,
+#beachball:hover .image_on,
+#video:hover .image_on,
+#world:hover .image_on {
+  display: none;
+}
+
+.image_on,
+#junji:hover .image_off,
+#smiley:hover .image_off,
+#frog:hover .image_off,
+#beachball:hover .image_off,
+#video:hover .image_off,
+#world:hover .image_off {
+  display: block;
+}
+
+.projects_col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 20px;
+}
+
 @media only screen and (min-width: 768px) {
   /*FRONTPAGE*/
   .frontpage_me {
@@ -130,6 +158,14 @@ header {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  /*PORTFOLIO*/
+  .projects_col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 100px 20% 0 20%;
   }
 }
 
