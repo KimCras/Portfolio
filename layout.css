@@ -1,9 +1,325 @@
-p {
-  font-family: "Patrick Hand", cursive;
-  font-size: 18px;
+body {
+  margin: 0;
+  background-image: url(svg/grid.svg);
 }
 
-h1,
-h2 {
+/*BURGERMENU AND HEADER*/
+header {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin-right: 20px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-family: "Sue Ellen Francisco", cursive;
+  font-size: 20px;
+  margin-right: 65px;
+}
+
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px 0;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.overlay-menu {
+  list-style: none;
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(227, 159, 43);
+}
+
+.overlay-menu li {
+  margin-bottom: 20px;
+}
+
+.overlay-menu a {
+  text-decoration: none;
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #000000;
+  font-size: 28px;
+}
+
+.nav_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid rgb(51, 38, 22);
+  background-color: white;
+  padding: 20px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.nav_image a {
+  text-decoration: none;
+  font-family: "Sue Ellen Francisco", cursive;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.nav_image h3 {
+  color: #000000;
+  margin: 0;
+}
+
+/*PORTFOLIO*/
+.image_off,
+#junji:hover .image_on,
+#smiley:hover .image_on,
+#frog:hover .image_on,
+#beachball:hover .image_on,
+#video:hover .image_on,
+#world:hover .image_on {
+  display: none;
+}
+
+.image_on,
+#junji:hover .image_off,
+#smiley:hover .image_off,
+#frog:hover .image_off,
+#beachball:hover .image_off,
+#video:hover .image_off,
+#world:hover .image_off {
+  display: block;
+}
+
+.projects_col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: 20px;
+}
+
+/*KONTAKT*/
+
+form {
+  padding: 2rem;
+  background-color: white;
+  color: #594621;
+  border-radius: 8px;
+  display: grid;
+  width: 80%;
+  height: 325px;
+  gap: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.formular_grid {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: end;
+  background-color: #fdb731;
+  border-radius: 5px;
   font-family: "Titan One", sans-serif;
+}
+#heysa_image {
+  margin-top: 30px;
+}
+
+#contact_text {
+  font-family: "Sue Ellen Francisco", cursive;
+  color: #b45b27;
+  margin-left: 5%;
+  padding-top: 5px;
+}
+
+#contact_text h2 {
+  font-size: 30px;
+  margin: 10px 0 0 0;
+}
+
+label {
+  font-size: 24px;
+  font-family: "Sue Ellen Francisco", cursive;
+  margin-top: 10px;
+}
+input,
+textarea {
+  background-color: rgb(229, 229, 229);
+}
+
+textarea {
+  height: 60px;
+}
+
+button {
+  background-color: #b45b27;
+  font-family: "Titan One", sans-serif;
+  color: white;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  border: #b45b27;
+  border-radius: 5px;
+  padding: 5px 0 5px 0;
+  margin-top: 20px;
+}
+
+/*OM MIG*/
+.center {
+  text-align: center;
+}
+
+.grid_mobile,
+#telephone,
+#email,
+#location,
+#language_interests,
+#education {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#language_interests {
+  text-align: center;
+  margin-right: 20px;
+}
+
+.social_media_icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+#programs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+}
+#kontakt_om_mig img {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 30px;
+}
+#kontakt_om_mig {
+  margin: auto;
+}
+#kontakt_om_mig p {
+  margin: 15px 0 15px 0px;
+  margin-right: auto;
+}
+#telephone,
+#email,
+#location {
+  grid-template-columns: 1fr 2fr;
+}
+
+.social_media_icons {
+  margin: 10px auto 10px auto;
+  gap: 10px;
+  width: 55%;
+}
+
+@media only screen and (min-width: 868px) {
+  /*FRONTPAGE*/
+  .frontpage_me {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 59%;
+  }
+
+  .navigation_images {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*PORTFOLIO*/
+  .projects_col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 15px;
+    width: 70%;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* KONTAKT */
+  .formular_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-right: 40px;
+    margin-top: 10px;
+    width: 70%;
+  }
+  #kontakt_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #heysa_image {
+    align-self: flex-end;
+    order: -1;
+  }
+
+  #contact_text {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-list {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .overlay {
+    display: block;
+  }
 }
