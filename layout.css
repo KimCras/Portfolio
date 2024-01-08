@@ -204,7 +204,7 @@ button {
 
 /*PROJEKTSIDER*/
 .projekt_introduction_img {
-  width: 70%;
+  width: 90%;
   margin: 0 auto 0 auto;
 }
 
@@ -363,7 +363,11 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 35px 80px 35px 80px;
-    gap: 65px;
+    gap: 95px;
+  }
+
+  .introduction {
+    margin-top: 90px;
   }
   /* 
   .text_image img,
@@ -380,6 +384,7 @@ button {
   .image_on_left,
   .projekt_introduction_img {
     margin-top: auto;
+    margin-bottom: auto;
   }
   .image_on_left {
     order: -1;
@@ -394,6 +399,36 @@ button {
     margin-top: auto;
     margin-bottom: auto;
   }
+}
+
+.project img {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  background-image: url(svg/grid.svg);
+  transition: background-color 0.3s ease-in-out; /* Add transition for smoother effect */
+}
+
+body.overlay-visible {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7); /* Apply grey background to the entire body */
+}
+
+main.overlay-visible {
+  z-index: 999; /* Ensure the main content is behind the enlarged image */
+}
+
+.project img.enlarged {
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 
 @media only screen and (max-width: 768px) {
