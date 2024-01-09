@@ -354,7 +354,7 @@ button {
     width: 40%;
   }
 
-  /*ANIMATION PROJEKT*/
+  /*PROJEKT SIDER*/
   .introduction,
   .text_image,
   .image_text,
@@ -369,12 +369,6 @@ button {
   .introduction {
     margin-top: 90px;
   }
-  /* 
-  .text_image img,
-  .image_text img {
-    width: 85%;
-    margin: auto;
-  } */
 
   .projekt_introduction_img {
     order: 1;
@@ -386,6 +380,11 @@ button {
     margin-top: auto;
     margin-bottom: auto;
   }
+
+  .double_text {
+    margin-top: auto;
+  }
+
   .image_on_left {
     order: -1;
   }
@@ -423,7 +422,7 @@ main.overlay-visible {
 
 .project img.enlarged {
   position: fixed;
-  width: 80%;
+  width: auto;
   height: 100%;
   top: 50%;
   left: 50%;
