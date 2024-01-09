@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="layout.css">
     <title>Your Website</title>
@@ -18,7 +19,7 @@
     <header>
         <div class="logo">
             <a href="index.html">
-                <img src="billeder/frogknight_logo.png" alt="Your Logo">
+                <img src="svg/portfolio_logo.svg" alt="Your Logo">
             </a>
         </div>
         <nav class="nav">
@@ -46,7 +47,7 @@
 
     <div class="introduction">
         <div class="projekt_introduction_img">
-            <img src="svg/" alt="grund_ux/ui intro img ">
+            <img src="svg/grund_web.svg" alt="grund_ux/ui intro img ">
         </div>
         <div class="introduction_text">
             <h3>Grundlæggende web</h3>
@@ -55,6 +56,7 @@
                 kig på mit designprocess, hvor layoutdiagrammer og wireframes spiller en central rolle i mit indledende
                 tema.
             </p>
+            <a href="https://kimcras.dk/kea/02_web/01_website/website/index.html">Link til hjemmeside</a>
         </div>
     </div>
 
@@ -76,7 +78,7 @@
                 <p>I dette tema blev vi introduceret til layoutdiagrammer, samt mit første indblik i, hvordan en
                     layoutdiagram kan hjælpe en med at forstå sin html ved hjælp af visuel repræsentation. Billedet til
                     højre er en eksempel på et layoutdiagram, som underviserne delte ud. Der vises der hvordan vores
-                    index.html fil skulle struktureres, ved at vise hvilke klasser og hvilket html-element det besidder
+                    index.html fil skulle struktureres, ved at vise hvilke klasser og hvilket html-tag det besidder sig
                     i.
                 </p>
             </div>
@@ -111,7 +113,7 @@
                     kunne tilpasses og udbygges, da jeg bevægede mig mod større skærmstørrelser.</p>
             </div>
             <div class="image_on_right">
-                <img src="img/web/mobilefirst_tema2.webp" alt="mobile first">
+                <img id="smaller_img" src="img/web/mobilefirst_tema2.webp" alt="mobile first">
             </div>
         </section>
         <hr>
@@ -144,7 +146,7 @@
                 </p>
             </div>
             <div class="image_on_right">
-                <img src="img/uiux/junji_storyboard.png" alt="aktivitetdiagram">
+                <img src="img/web/løsning_galleri.webp" alt="galleri">
             </div>
         </section>
         <hr>
@@ -159,21 +161,44 @@
                     og
                     media queries. At starte med mobilversionen først viste sig at være en nyttig tilgang, og arbejdet
                     med
-                    layoutdiagrammer og wireframes styrkede min struktureringsproces. Implementeringen af et galleri med
+                    layoutdiagrammer og wireframes styrkede min viden om at strukturere mit kode. Implementeringen
+                    af et galleri med
                     CSS
-                    grids udfordrede mig, men gav mig vigtige indsigter. Farve- og fontvalg blev lettere med værktøjer
-                    som
-                    Coolors.dk, hvilket skabte en visuel konsistens. At arbejde med responsivitet og media queries
+                    grids udfordrede mig, men gav mig vigtige indsigter. </p>
+                <p>At arbejde med responsivitet og media queries
                     forbedrede min forståelse af tilpasning til forskellige enheder. Samlet set har dette projekt været
                     en
-                    lærerig oplevelse i webudvikling, og giver mig en ide om mit fortsatte udvikling til at blive
-                    multimediedesigner.
+                    lærerig oplevelse i webudvikling, og givet mig en smagsprøve på den praktiske del kodning.
                 </p>
             </div>
         </section>
         <hr>
 
     </main>
+    <footer>
+
+        <div class="footer_left">
+
+            <img class="logo_footer" src="svg/portfolio_logo.svg" alt="logo">
+            <div class="footer_icons">
+                <a href="https://www.facebook.com/kim.rasmussen.399/">
+                    <img src="icons/facebook_725350.webp" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/taomerin/">
+                    <img src="icons/instagram_253801.webp" alt="instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/kimberly-rasmussen-494929289/">
+                    <img src="icons/linkedin_725397.webp" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-footer">
+                <li><a href="om_mig.html">OM MIG</a></li>
+                <li><a href="portfolio.html">PORTFOLIO</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+    </footer>
     <script src="script.js"></script>
 </body>
 
