@@ -275,10 +275,14 @@ button {
 }
 #send_message p {
   background-color: white;
-  width: 60%;
+  font-size: 25px;
+  color: #b45b27;
   border-radius: 5px;
   margin: 15px auto 15px auto;
-  padding: 5px;
+  padding: 15px;
+}
+#send_message p:hover {
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 868px) {

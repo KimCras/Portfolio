@@ -65,6 +65,13 @@ h3 {
   border-style: groove;
 }
 
+.nav-list a:hover {
+  color: #fdb731;
+}
+.nav-footer a:hover {
+  color: white;
+}
+
 .date_subject p {
   color: grey;
   font-size: 18px;
@@ -106,7 +113,7 @@ h3 {
 /*footer*/
 
 footer {
-  background-color: #fdb731;
+  background-color: #b45b27;
   margin-top: 20px;
   padding: 20px;
 }
