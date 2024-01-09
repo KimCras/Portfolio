@@ -104,6 +104,10 @@ footer {
   font-size: 20px;
   text-align: center;
 }
+.nav_image:hover {
+  color: #fdb731;
+  text-decoration: underline;
+}
 
 .nav_image a {
   text-decoration: none;
@@ -115,6 +119,11 @@ footer {
 .nav_image h3 {
   color: #000000;
   margin: 0;
+}
+
+.nav_image h3:hover {
+  color: #fdb731;
+  text-decoration: underline;
 }
 
 /*PORTFOLIO*/

@@ -64,9 +64,26 @@ h3 {
   background-color: white;
   border-style: groove;
 }
+.links_to_projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.links_to_projects a {
+  color: black;
+  background-color: #fdb731;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px;
+}
+.links_to_projects a:hover {
+  color: white;
+}
 
 .nav-list a:hover {
   color: #fdb731;
+  text-decoration: underline;
 }
 .nav-footer a:hover {
   color: white;
