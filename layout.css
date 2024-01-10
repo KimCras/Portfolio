@@ -5,7 +5,6 @@ body {
 
 /*BURGERMENU AND HEADER*/
 header {
-  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -163,7 +162,7 @@ form {
   border-radius: 8px;
   display: grid;
   width: 80%;
-  height: 325px;
+  height: 385px;
   gap: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -194,7 +193,7 @@ form {
 }
 
 label {
-  font-size: 24px;
+  font-size: 30px;
   font-family: "Sue Ellen Francisco", cursive;
   margin-top: 10px;
 }
@@ -210,14 +209,16 @@ textarea {
 button {
   background-color: #b45b27;
   font-family: "Titan One", sans-serif;
+  font-weight: 200;
   color: white;
   width: 150px;
   margin-left: auto;
   margin-right: auto;
   border: #b45b27;
   border-radius: 5px;
-  padding: 5px 0 5px 0;
+  padding: 10px 0 10px 0;
   margin-top: 20px;
+  font-size: 20px;
 }
 
 /*PROJEKTSIDER*/
@@ -285,10 +286,11 @@ button {
 #send_message p {
   background-color: white;
   font-size: 25px;
+  width: 170px;
   color: #b45b27;
   border-radius: 5px;
   margin: 15px auto 15px auto;
-  padding: 15px;
+  padding: 10px;
 }
 #send_message p:hover {
   text-decoration: underline;
@@ -372,7 +374,6 @@ button {
   }
   .heysa img {
     margin-top: auto;
-    align-self: bottom;
   }
   #send_message p {
     width: 40%;
@@ -383,7 +384,8 @@ button {
   .text_image,
   .image_text,
   .text_formaal,
-  .refleksion {
+  .refleksion,
+  .text_text {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 35px 80px 35px 80px;
@@ -406,7 +408,13 @@ button {
   }
 
   .double_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: auto;
+  }
+  .text_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .image_on_left {
@@ -427,11 +435,6 @@ button {
     width: auto;
     margin-right: auto;
     margin-left: auto;
-  }
-  /*FOOTER*/
-  .nav-footer {
-    font-size: 25px;
-    display: flex;
   }
 }
 
